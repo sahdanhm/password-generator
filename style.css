@@ -1,0 +1,82 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background: url(images/cyber-world.jpg) no-repeat;
+  background-size: cover;
+}
+body {
+  height: 100vh;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.367);
+}
+.container {
+  text-align: center;
+  color: aliceblue;
+}
+.header {
+  margin-top: 50px;
+}
+.header h3 {
+  margin-top: 20px;
+  font-weight: lighter;
+}
+.password {
+  height: 50vh;
+  width: 100vw;
+  padding: 20px;
+  overflow: auto;
+}
+.password p{
+    font-size: 46px;
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-top: 10vh;
+}
+.setting {
+  border-style: solid;
+  border-width: 2px 0 0 0;
+  width: fit-content;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.setting input {
+  width: 70px;
+  height: 30px;
+  font-size: 17px;
+  outline: none;
+}
+[class^='btn'] {
+  background-color: rgb(115, 193, 216);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.btn-copy {
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+  color: white;
+}
+.btn-gnrt {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 4px solid;
+  color: white;
+  border-top-color: rgb(21, 255, 243);
+  border-left-color: rgb(21, 255, 243);
+}
+.btn-gnrt:active {
+  border: 4px solid white;
+  border-bottom-color: rgb(21, 255, 243);
+  border-right-color: rgb(21, 255, 243);
+}
