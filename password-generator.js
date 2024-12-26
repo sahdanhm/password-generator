@@ -5,11 +5,11 @@ function generatePass() {
 
   let char = 'abcdefghijklmnopqrstuvwxyz';
   char += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  char += '!@#$%^&*';
+  char += '!@#$%^&*`~*()-_=+[]{};:?/';
   char += '0123456789';
 if (long <= 200){
   for (i = 0; i < long; i++) {
-    let indx = Math.floor(Math.random() * char.length - 1);
+    let indx = Math.round(Math.random() * char.length - 1);
     pass += char.charAt(indx);
   }
   document.getElementById('pass-output').innerHTML = pass;
@@ -19,7 +19,7 @@ if (long <= 200){
 }
 
 function copy() {
-  let pass = document.getElementById('pass-output').innerHTML;
+  let pass = document.getElementById('pass-output').textContent;
   if (pass.includes('span')) {
     alert('Password has NOT generated yet');
   } else {
